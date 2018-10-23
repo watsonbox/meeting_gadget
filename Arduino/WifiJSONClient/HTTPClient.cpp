@@ -1093,6 +1093,10 @@ int HTTPClient::writeToStreamDataBlock(Stream * stream, int size)
                 delay(0);
             } else {
                 delay(1);
+
+                if(len < 0) {
+                  len = 0; // Hack: terminate loop if we don't know content length
+                }
             }
         }
 
