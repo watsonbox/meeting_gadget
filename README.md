@@ -26,3 +26,9 @@ Multi-purpose meeting room gadget
 - Needed to install [USB to UART drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) to get the device to show up in OSX.
 - Installed ESP32 Arduino core https://github.com/espressif/arduino-esp32
 - Installed ESP32 Arduino SSD1306 OLED driver https://github.com/ThingPulse/esp8266-oled-ssd1306
+
+## Progress
+
+Hello World on OLED display
+
+![Hello World on OLED display](Photos/1.JPG)
