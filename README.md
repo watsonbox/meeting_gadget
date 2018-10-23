@@ -33,3 +33,7 @@ Multi-purpose meeting room gadget
 Hello World on OLED display
 
 ![Hello World on OLED display](Photos/1.JPG)
+
+Meeting data
+
+![Meeting data from web service on OLED display](Photos/2.JPG)
