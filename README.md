@@ -10,7 +10,7 @@ Multi-purpose meeting room gadget
 
 ## Todo
 
-- [ ] Get ESP32 built-in LED blinking
+- [x] Get ESP32 built-in LED blinking
 - [ ] Write to OLED display
 - [ ] Get ESP32 connecting to wifi
 - [ ] Build simple JSON web service
@@ -24,3 +24,4 @@ Multi-purpose meeting room gadget
 ## Notes
 
 - Needed to install [USB to UART drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) to get the device to show up in OSX.
+- Installed ESP32 Arduino core https://github.com/espressif/arduino-esp32
