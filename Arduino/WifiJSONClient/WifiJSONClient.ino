@@ -2,6 +2,10 @@
 #include <WiFi.h>
 #include "HTTPClient.h"
 #include <StreamString.h>
+#include <Wire.h>
+#include "SSD1306.h" 
+ 
+SSD1306  display(0x3c, 26, 27);
  
 const char* ssid = SECRET_WIFI_SSID;
 const char* password = SECRET_WIFI_PASSWORD;
@@ -25,10 +29,21 @@ void loop() {
   
   if ((WiFi.status() == WL_CONNECTED)) {
     Serial.println("Making Google Script request");
-    Serial.println(getGoogleScriptResponse());
+    String response = getGoogleScriptResponse();
+    
+    Serial.println(response);
+    displayText(response);
   }
 
   delay(5000);
+}
+
+void displayText(String text) {
+  display.init();
+  display.flipScreenVertically();
+  display.setFont(ArialMT_Plain_24);
+  display.drawString(0, 0, text);
+  display.display();
 }
 
 String getGoogleScriptResponse() {

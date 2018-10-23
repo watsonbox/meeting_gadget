@@ -14,7 +14,7 @@ Multi-purpose meeting room gadget
 - [x] Write to OLED SSD1306 display
 - [x] Get ESP32 connecting to wifi
 - [x] Build simple JSON web service
-- [ ] Get ESP32 to poll web service and show data on screen
+- [x] Get ESP32 to poll web service and show data on screen
 - [ ] Build simple web service to get meeting data (maybe using Google Script?)
 
 ## Resources
