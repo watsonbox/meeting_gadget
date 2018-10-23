@@ -13,13 +13,14 @@ Multi-purpose meeting room gadget
 - [x] Get ESP32 built-in LED blinking
 - [x] Write to OLED SSD1306 display
 - [x] Get ESP32 connecting to wifi
-- [ ] Build simple JSON web service
+- [x] Build simple JSON web service
 - [ ] Get ESP32 to poll web service and show data on screen
 - [ ] Build simple web service to get meeting data (maybe using Google Script?)
 
 ## Resources
 
 - ESP32 Arduino: Interacting with a SSD1306 OLED display https://techtutorialsx.com/2017/12/02/esp32-arduino-interacting-with-a-ssd1306-oled-display/
+- Getting Arduino response headers https://techtutorialsx.com/2018/06/08/esp8266-arduino-getting-http-response-headers/
 
 ## Notes
 
