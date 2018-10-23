@@ -11,7 +11,7 @@ Multi-purpose meeting room gadget
 ## Todo
 
 - [x] Get ESP32 built-in LED blinking
-- [ ] Write to OLED display
+- [x] Write to OLED SSD1306 display
 - [ ] Get ESP32 connecting to wifi
 - [ ] Build simple JSON web service
 - [ ] Get ESP32 to poll web service and show data on screen
@@ -25,3 +25,4 @@ Multi-purpose meeting room gadget
 
 - Needed to install [USB to UART drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers) to get the device to show up in OSX.
 - Installed ESP32 Arduino core https://github.com/espressif/arduino-esp32
+- Installed ESP32 Arduino SSD1306 OLED driver https://github.com/ThingPulse/esp8266-oled-ssd1306
