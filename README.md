@@ -15,7 +15,7 @@ Multi-purpose meeting room gadget
 - [x] Get ESP32 connecting to wifi
 - [x] Build simple JSON web service
 - [x] Get ESP32 to poll web service and show data on screen
-- [ ] Build simple web service to get meeting data (maybe using Google Script?)
+- [x] Build simple web service to get meeting data (maybe using Google Script?)
 
 ## Resources
 

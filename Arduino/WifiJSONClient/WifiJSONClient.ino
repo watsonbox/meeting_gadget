@@ -17,33 +17,40 @@ void setup() {
  
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
+    displayText("Connecting...");
     Serial.println("Connecting to WiFi..");
   }
  
   Serial.println("Connected to the WiFi network");
+  displayText("Connected!");
   Serial.println(WiFi.localIP());
+
+  
 }
 
 void loop() {
-  Serial.println("Starting loop");
-  
-  if ((WiFi.status() == WL_CONNECTED)) {
-    Serial.println("Making Google Script request");
-    String response = getGoogleScriptResponse();
-    
-    Serial.println(response);
-    displayText(response);
-  }
-
+  displayMeetingData();
   delay(5000);
 }
 
 void displayText(String text) {
   display.init();
   display.flipScreenVertically();
-  display.setFont(ArialMT_Plain_24);
+  display.setFont(ArialMT_Plain_16);
   display.drawString(0, 0, text);
   display.display();
+}
+
+void displayMeetingData() {
+  if ((WiFi.status() == WL_CONNECTED)) {
+    Serial.println("Making Google Script request");
+    String response = getGoogleScriptResponse();
+    
+    Serial.println(response);
+    displayText(response);
+  } else {
+    displayText("No wifi :(");
+  }
 }
 
 String getGoogleScriptResponse() {
